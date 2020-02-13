@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="4">
+  <component name="FacetManager">
+    <facet type="hibernate" name="Hibernate">
+      <configuration>
+        <datasource-map>
+          <unit-entry name="sessionFactory" />
+          <unit-entry name="stationery-store-db.cfg.xml" value="bf90fd92-797a-4c3d-8c05-120cb2a1d3e8" />
+          <unit-entry name="stationery-store-db:config:stationery-store-db.cfg.xml" />
+        </datasource-map>
+        <naming-strategy-map />
+        <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/stationery-store-db/config/stationery-store-db.cfg.xml" />
+      </configuration>
+    </facet>
+  </component>
+</module>
