@@ -1,4 +1,4 @@
-package org.romani.stationery.store.services;
+package org.romani.stationery.store.service;
 
 import org.romani.stationery.store.models.User;
 

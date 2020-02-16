@@ -1,8 +1,9 @@
-package org.romani.stationery.store.daos;
+package org.romani.stationery.store.dao.impl;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
+import org.romani.stationery.store.dao.UserDAO;
 import org.romani.stationery.store.models.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -23,9 +24,7 @@ public class UserDAOImpl implements UserDAO {
         Session currentSession = sessionFactory.getCurrentSession();
 
         // create a query  ... sort by last name
-        Query<User> userQuery =
-                currentSession.createQuery("from User order by lastName",
-                        User.class);
+        Query<User> userQuery = currentSession.createQuery("from User order by lastName", User.class);
 
         // execute query and get result list
         List<User> users = userQuery.getResultList();

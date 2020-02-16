@@ -5,10 +5,11 @@
       <configuration>
         <datasource-map>
           <unit-entry name="sessionFactory" />
-          <unit-entry name="stationery-store-db:config:stationery-store-db.cfg.xml" />
+          <unit-entry name="stationery-store-db:config:stationery-store-db.cfg.xml" value="7df84fbf-3628-495d-88b8-31242a100bb6" />
+          <unit-entry name="stationery-store-db:configFiles:stationery-store-db.cfg.xml" />
         </datasource-map>
         <naming-strategy-map />
-        <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/stationery-store-db/config/stationery-store-db.cfg.xml" />
+        <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/stationery-store-db/configFiles/stationery-store-db.cfg.xml" />
       </configuration>
     </facet>
   </component>

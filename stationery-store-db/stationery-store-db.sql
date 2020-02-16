@@ -178,7 +178,7 @@ CREATE TABLE `shipper`
   AUTO_INCREMENT = 1
   DEFAULT CHARSET = latin1;
 
-CREATE TABLE `order`
+CREATE TABLE `orders`
 (
     `id`                      int(11) NOT NULL AUTO_INCREMENT,
     `order_status_id`         int(11) NOT NULL,
@@ -200,7 +200,6 @@ CREATE TABLE `order_item`
     `product_id`            int(11) NOT NULL,
     `classified_product_id` int(11) DEFAULT NULL,
     `order_id`              int(11) NOT NULL,
-    `submit_date`           int(11) NOT NULL,
     `quantity`              int(11) NOT NULL,
     `price_per_unit`        int(11) NOT NULL,
     PRIMARY KEY (`id`),

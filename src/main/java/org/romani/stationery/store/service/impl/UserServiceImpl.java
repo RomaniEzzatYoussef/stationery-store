@@ -1,10 +1,11 @@
-package org.romani.stationery.store.services;
+package org.romani.stationery.store.service.impl;
 
 import org.romani.stationery.store.models.User;
+import org.romani.stationery.store.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import org.romani.stationery.store.daos.UserDAO;
+import org.romani.stationery.store.dao.UserDAO;
 
 import java.util.List;
 
