@@ -1,8 +1,7 @@
-package org.romani.stationery.store.service.impl;
+package org.romani.stationery.store.service.gradelevel;
 
-import org.romani.stationery.store.dao.GradeLevelDAO;
+import org.romani.stationery.store.dao.gradelevel.GradeLevelDAO;
 import org.romani.stationery.store.models.GradeLevel;
-import org.romani.stationery.store.service.GradeLevelService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

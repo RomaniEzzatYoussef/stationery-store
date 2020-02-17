@@ -1,9 +1,9 @@
-package org.romani.stationery.store.dao.impl;
+package org.romani.stationery.store.dao.user;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
-import org.romani.stationery.store.dao.UserDAO;
+import org.romani.stationery.store.dao.user.UserDAO;
 import org.romani.stationery.store.models.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;

@@ -1,5 +1,7 @@
 package org.romani.stationery.store.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 
 @Entity
@@ -9,11 +11,8 @@ public class ProductImages {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
+    @JsonIgnore
     private int id;
-
-    @ManyToOne
-    @JoinColumn(name = "product_id")
-    private Product product;
 
     @Column(name = "image_url")
     private String imageUrl;
@@ -27,14 +26,6 @@ public class ProductImages {
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    public Product getProduct() {
-        return product;
-    }
-
-    public void setProduct(Product product) {
-        this.product = product;
     }
 
     public String getImageUrl() {

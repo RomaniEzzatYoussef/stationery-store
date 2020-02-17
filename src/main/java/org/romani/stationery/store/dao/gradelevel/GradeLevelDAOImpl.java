@@ -1,9 +1,8 @@
-package org.romani.stationery.store.dao.impl;
+package org.romani.stationery.store.dao.gradelevel;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
-import org.romani.stationery.store.dao.GradeLevelDAO;
 import org.romani.stationery.store.models.GradeLevel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;

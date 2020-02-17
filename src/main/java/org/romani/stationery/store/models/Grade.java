@@ -1,6 +1,10 @@
 package org.romani.stationery.store.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "grade")
@@ -9,39 +13,42 @@ public class Grade {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    private int id;
-
-    @ManyToOne
-    @JoinColumn(name = "grade_level")
-    private GradeLevel gradeLevel;
+    @JsonIgnore
+    private int gradeId;
 
     @Column(name = "grade_number")
-    private int gradeNumber;
+    @JsonIgnore
+    private int grade;
+
+    @OneToMany(fetch=FetchType.LAZY, cascade= {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.DETACH, CascadeType.REFRESH})
+    @JoinColumn(name = "grade_id")
+    @Fetch(FetchMode.JOIN)
+    private List<ClassifiedProduct> classifiedProducts;
 
     public Grade() {
     }
 
-    public int getId() {
-        return id;
+    public int getGradeId() {
+        return gradeId;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setGradeId(int gradeId) {
+        this.gradeId = gradeId;
     }
 
-    public GradeLevel getGradeLevel() {
-        return gradeLevel;
+    public int getGrade() {
+        return grade;
     }
 
-    public void setGradeLevel(GradeLevel gradeLevel) {
-        this.gradeLevel = gradeLevel;
+    public void setGrade(int grade) {
+        this.grade = grade;
     }
 
-    public int getGradeNumber() {
-        return gradeNumber;
+    public List<ClassifiedProduct> getClassifiedProducts() {
+        return classifiedProducts;
     }
 
-    public void setGradeNumber(int gradeNumber) {
-        this.gradeNumber = gradeNumber;
+    public void setClassifiedProducts(List<ClassifiedProduct> classifiedProducts) {
+        this.classifiedProducts = classifiedProducts;
     }
 }

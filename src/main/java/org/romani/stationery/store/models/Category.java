@@ -8,16 +8,16 @@ public class Category {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
+    @Column(name = "id" , nullable = false)
     private int id;
 
     @Column(name = "name")
     private String name;
 
-    @Column(name = "image_url")
+    @Column(name = "image_url", nullable = false)
     private String imageUrl;
 
-    @Column(name = "description")
+    @Column(name = "description", nullable = false)
     private String description;
 
     public Category() {

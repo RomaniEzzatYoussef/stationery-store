@@ -12,12 +12,8 @@ public class Offers {
     @Column(name = "id")
     private int id;
 
-    @ManyToOne
-    @JoinColumn(name = "product_id")
-    private Product product;
-
     @Column(name = "discount")
-    private int discount;
+    private double discount;
 
     @Column(name = "start_date")
     private Date startDate;
@@ -36,19 +32,11 @@ public class Offers {
         this.id = id;
     }
 
-    public Product getProduct() {
-        return product;
-    }
-
-    public void setProduct(Product product) {
-        this.product = product;
-    }
-
-    public int getDiscount() {
+    public double getDiscount() {
         return discount;
     }
 
-    public void setDiscount(int discount) {
+    public void setDiscount(double discount) {
         this.discount = discount;
     }
 

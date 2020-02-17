@@ -1,9 +1,11 @@
-package org.romani.stationery.store.service;
+package org.romani.stationery.store.dao.gradelevel;
 
 import org.romani.stationery.store.models.GradeLevel;
 import java.util.List;
 
-public interface GradeLevelService {
+
+public interface GradeLevelDAO {
+
 
     public List<GradeLevel> getGradeLevels();
 

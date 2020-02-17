@@ -1,4 +1,4 @@
-package org.romani.stationery.store.dao;
+package org.romani.stationery.store.dao.user;
 
 import org.romani.stationery.store.models.User;
 

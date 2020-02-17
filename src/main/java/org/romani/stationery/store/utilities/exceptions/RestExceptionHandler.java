@@ -1,4 +1,4 @@
-package org.romani.stationery.store.utilities;
+package org.romani.stationery.store.utilities.exceptions;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

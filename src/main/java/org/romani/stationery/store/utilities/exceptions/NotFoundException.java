@@ -1,4 +1,4 @@
-package org.romani.stationery.store.utilities;
+package org.romani.stationery.store.utilities.exceptions;
 
 public class NotFoundException extends RuntimeException {
 
